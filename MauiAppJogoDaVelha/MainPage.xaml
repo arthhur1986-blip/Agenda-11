@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppJogoDaVelha.MainPage"
+             Title="Jogo da Velha">
+
+    <VerticalStackLayout Padding="20" Spacing="20" VerticalOptions="Center">
+        
+        <!-- Título -->
+        <Label 
+            Text="Jogo da Velha"
+            FontSize="32"
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"
+            Margin="0,0,0,20" />
+
+        <!-- Tabuleiro 3x3 -->
+        <Grid RowDefinitions="*, *, *" 
+              ColumnDefinitions="*, *, *"
+              ColumnSpacing="8" 
+              RowSpacing="8"
+              HorizontalOptions="Center">
+            
+            <Button Grid.Row="0" Grid.Column="0" Text="" Clicked="Button_Clicked" 
+                    BackgroundColor="#F0F0F0" TextColor="#333" FontSize="24" 
+                    CornerRadius="8" Padding="20" />
+            <Button Grid.Row="0" Grid.Column="1" Text="" Clicked="Button_Clicked" 
+                    BackgroundColor="#F0F0F0" TextColor="#333" FontSize="24" 
+                    CornerRadius="8" Padding="20" />
+            <Button Grid.Row="0" Grid.Column="2" Text="" Clicked="Button_Clicked" 
+                    BackgroundColor="#F0F0F0" TextColor="#333" FontSize="24" 
+                    CornerRadius="8" Padding="20" />
+
+            <Button Grid.Row="1" Grid.Column="0" Text="" Clicked="Button_Clicked" 
+                    BackgroundColor="#F0F0F0" TextColor="#333" FontSize="24" 
+                    CornerRadius="8" Padding="20" />
+            <Button Grid.Row="1" Grid.Column="1" Text="" Clicked="Button_Clicked" 
+                    BackgroundColor="#F0F0F0" TextColor="#333" FontSize="24" 
+                    CornerRadius="8" Padding="20" />
+            <Button Grid.Row="1" Grid.Column="2" Text="" Clicked="Button_Clicked" 
+                    BackgroundColor="#F0F0F0" TextColor="#333" FontSize="24" 
+                    CornerRadius="8" Padding="20" />
+
+            <Button Grid.Row="2" Grid.Column="0" Text="" Clicked="Button_Clicked" 
+                    BackgroundColor="#F0F0F0" TextColor="#333" FontSize="24" 
+                    CornerRadius="8" Padding="20" />
+            <Button Grid.Row="2" Grid.Column="1" Text="" Clicked="Button_Clicked" 
+                    BackgroundColor="#F0F0F0" TextColor="#333" FontSize="24" 
+                    CornerRadius="8" Padding="20" />
+            <Button Grid.Row="2" Grid.Column="2" Text="" Clicked="Button_Clicked" 
+                    BackgroundColor="#F0F0F0" TextColor="#333" FontSize="24" 
+                    CornerRadius="8" Padding="20" />
+        </Grid>
+
+        <!-- Status e Botão Reset -->
+        <Label 
+            x:Name="StatusLabel"
+            Text="Seu turno"
+            FontSize="16"
+            HorizontalTextAlignment="Center"
+            Margin="0,20,0,0" />
+
+        <Button 
+            Text="Novo Jogo"
+            Clicked="NewGame_Clicked"
+            BackgroundColor="#333"
+            TextColor="White"
+            CornerRadius="8"
+            Padding="16"
+            FontAttributes="Bold" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
